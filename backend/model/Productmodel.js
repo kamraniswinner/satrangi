@@ -29,7 +29,15 @@ const productSchema = new Schema({
                 type: String
             }
         }
-    ]
+    ],
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
+    updatedAt: {
+        type: Date,
+        default: Date.now
+    }
 });
 
 // Create a model using the product schema
